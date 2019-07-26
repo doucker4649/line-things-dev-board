@@ -49,7 +49,7 @@
             <div class="nav nav-tabs col" role="tablist">
               <a class="nav-item nav-link small active" id="nav-notify-tab" data-toggle="tab" href="#nav-notify" role="tab" aria-controls="nav-notify" aria-selected="true">Notify</a>
               <a class="nav-item nav-link small" id="nav-write-tab" data-toggle="tab" href="#nav-write" role="tab" aria-controls="nav-write" aria-selected="true">Write</a>
-              <a class="nav-item nav-link small" id="nav-advert-tab" data-toggle="tab" href="#nav-advert" role="tab" aria-controls="nav-advert" aria-selected="true">Write advertising packet</a>
+              <a class="nav-item nav-link small" id="nav-advert-tab" data-toggle="tab" href="#nav-advert" role="tab" aria-controls="nav-advert" aria-selected="true">Write Text / Service UUID</a>
             </div>
           </nav>
           <div class="tab-content row my-2">
@@ -287,6 +287,15 @@
             <div class="tab-pane fade col" id="nav-advert" role="tabpanel" aria-labelledby="nav-advert-tab">
               <div class="row justify-content-center">
                 <div class="col text-center">
+                  <p>
+                    <label for="uuid">Write Text</label>
+                    <input type="" class="form-control write_text" id="writetext" maxlength='16' placeholder="TEXT">
+                    <small class="text-muted">16文字までの半角英数字を入力してください。</small>
+                  </p>
+                  <p>
+                    <button type="button" class="settext btn btn-secondary"><i class="fas fa-sync-alt"></i> Write Text</button>
+                  </p>
+                  <hr />
                   <p>
                     <label for="uuid">Advertising UUID</label>
                     <input type="" class="form-control uuid_text" id="uuidtext" placeholder="UUID">
